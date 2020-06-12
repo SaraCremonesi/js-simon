@@ -16,7 +16,9 @@ while (i < 5) {
     i++
   }
 };
-  alert(arrayNumeriCasuali);
+  alert('I numeri da ricordare sono: ' + arrayNumeriCasuali);
+
+ var time = setTimeout(timeOut,3000);
 
 // ****************FUNZIONI****************
 // Funzione per evitare le ripetizioni degli stessi numeri casuali
@@ -29,3 +31,10 @@ function verificaPresenza(numero, array) {
   };
   return presenza;
 };
+
+// Funzione per far partire i 30 secondi
+function timeOut() {
+    for (i = 0; i < 5; i++) {
+      var numeroInserito = parseInt(prompt('Inserisci uno dei 5 numeri che ti ricordi'));
+    }
+  };
