@@ -1,11 +1,7 @@
-// Creo un array per inserire i 5 numeri casuali
-var arrayNumeriCasuali = [];
-
-// Creo una variabile per il controllo delle indesiderate ripetizioni di numeri
-var numeroProibito = false;
-
 // Creo un ciclo while nel quale verifico che i numeri casuali generati non siano
-// ripetuti uguali (tramite l'invocazione della funzione verificaPresenza) e li metto nel mio array
+// ripetuti uguali (tramite l'invocazione della funzione verificaPresenza) e li metto in un array
+var arrayNumeriCasuali = [];
+var numeroProibito = false;
 var i = 0;
 while (i < 5) {
   var randomInteger = Math.floor(Math.random() * 10 + 1);
@@ -19,13 +15,13 @@ while (i < 5) {
   alert('I numeri da ricordare sono: ' + arrayNumeriCasuali);
 
 // Setto la funzione di setTimeout per far apprire dopo 30 secondi dalla
- // chiusura dell'alert i 5 prompt per l'iserimento dei numeri memorizzati
+// chiusura dell'alert i 5 prompt per l'iserimento dei numeri memorizzati
 // (utilizzo una funzione anonima come primo argomento del setTimeout,
- // ma avrei potuto anche creare una funzione a parte da invocare nell'argomento)
- // poi sempre all'interno della funzione eseguo le operazioni di calcolo del punteggio,
- // ovvero utilizzo la funzione .includes() in un ciclo if per controllare se
- // il numero inserito sia esatto o sbagliato, se è esatto lo pusho in un array e
- // il punteggio totalizzato sarà dato dalla lunghezza stessa dell'array
+// ma avrei potuto anche creare una funzione a parte da invocare nell'argomento)
+// poi sempre all'interno della funzione eseguo le operazioni di calcolo del punteggio,
+// ovvero utilizzo la funzione .includes() in un ciclo if per controllare se
+// il numero inserito sia esatto o sbagliato, se è esatto lo pusho in un array e
+// il punteggio totalizzato sarà dato dalla lunghezza stessa dell'array
  setTimeout(function() {
    var arrayNumeriIndovinati = [];
      for (i = 0; i < 5; i++) {
